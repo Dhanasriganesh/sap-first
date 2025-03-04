@@ -1,0 +1,10 @@
+<mvc:View controllerName="com.app.project1.controller.Overview"
+    displayBlock="true"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+<Page >
+
+<Text text="hi" ></Text>
+</Page>
+</mvc:View>

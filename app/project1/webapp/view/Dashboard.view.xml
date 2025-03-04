@@ -1,0 +1,60 @@
+<mvc:View
+	controllerName="com.app.project1.controller.Dashboard"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	height="100%">
+
+	<OverflowToolbar class="bg-gray-200! p-2!">
+		<Button
+			text="Toggle Collapse/Expand"
+			icon="sap-icon://menu2"
+			press=".onCollapseExpandPress"
+			class="text-lg! font-bold!" />
+	</OverflowToolbar>
+
+	<FlexBox direction="Column" class="w-80! bg-white! shadow-lg! h-full! p-2!" id="sidebar">
+		<!-- Dashboard Section -->
+		<Panel headerText="Dashboard" expandable="true" expanded="true" class="font-bold! text-xl!">
+			<FlexBox direction="Column" class="gap-2!">
+				<Button text="Overview of Inventory Metrics" press=".onNavToOverview" class="w-full! text-left!"/>
+				<Button text="Charts" press=".onNavToCharts" class="w-full! text-left!"/>
+			</FlexBox>
+		</Panel>
+
+		<!-- Product Management Section -->
+		<Panel headerText="Product Management" expandable="true" expanded="true" class="font-bold! text-xl!">
+			<FlexBox direction="Column" class="gap-2!">
+				<Button text="View All Products" press=".onNavToViewProducts" class="w-full! text-left!"/>
+				<Button text="Add New Product" press=".onNavToAddProduct" class="w-full! text-left!"/>
+				<Button text="Edit Product Details" press=".onNavToEditProduct" class="w-full! text-left!"/>
+			</FlexBox>
+		</Panel>
+
+		<!-- Stock Management Section -->
+		<Panel headerText="Stock Management" expandable="true" expanded="true" class="font-bold! text-xl!">
+			<FlexBox direction="Column" class="gap-2!">
+				<Button text="Update Stock" press=".onNavToUpdateStock" class="w-full! text-left!"/>
+				<Button text="Low Stock Alerts" press=".onNavToStockAlerts" class="w-full! text-left!"/>
+			</FlexBox>
+		</Panel>
+
+		<!-- Supplier Management Section -->
+		<Panel headerText="Supplier Management" expandable="true" expanded="true" class="font-bold! text-xl!">
+			<FlexBox direction="Column" class="gap-2!">
+				<Button text="View Suppliers" press=".onNavToViewSuppliers" class="w-full! text-left!"/>
+				<Button text="Add Supplier" press=".onNavToAddSupplier" class="w-full! text-left!"/>
+				<Button text="Edit Supplier Details" press=".onNavToEditSupplier" class="w-full! text-left!"/>
+			</FlexBox>
+		</Panel>
+
+		<!-- Inventory Reports Section -->
+		<Panel headerText="Inventory Reports" expandable="true" expanded="true" class="font-bold! text-xl!">
+			<FlexBox direction="Column" class="gap-2!">
+				<Button text="Stock Overview Report" press=".onNavToStockReport" class="w-full! text-left!"/>
+				<Button text="Transaction History" press=".onNavToTransactionHistory" class="w-full! text-left!"/>
+			</FlexBox>
+		</Panel>
+
+	</FlexBox>
+</mvc:View>
